@@ -1,55 +1,192 @@
-@media(max-width:992px){
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px){
 
     .hero{
-
         flex-direction:column;
-
         text-align:center;
-
-        padding-top:120px;
+        gap:40px;
+        padding-top:140px;
     }
 
     .hero-left img{
-
-        width:300px;
-        height:400px;
-    }
-
-    .hero-right h1{
-
-        font-size:3rem;
+        width:320px;
+        height:auto;
     }
 
     .hero-buttons{
-
         justify-content:center;
+    }
+
+    .journey-wrapper{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .contact-wrapper{
+        grid-template-columns:1fr;
     }
 }
 
-@media(max-width:768px){
 
-    nav ul{
+/* =========================
+   MOBILE
+========================= */
 
-        gap:15px;
+@media (max-width: 768px){
+
+    section{
+        padding:80px 5%;
     }
 
-    .hero-right h1{
+    /* NAVBAR */
 
-        font-size:2.4rem;
+    .navbar{
+        padding:20px 5%;
+    }
+
+    nav ul{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:.85rem;
+    }
+
+    /* HERO */
+
+    .hero-right h1{
+        font-size:2.8rem;
     }
 
     .hero-right h2{
-
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
 
     .hero-description{
-
         font-size:1rem;
     }
 
     .hero-buttons{
-
         flex-direction:column;
+        align-items:center;
+    }
+
+    /* TITLES */
+
+    .journey-title,
+    .education-title,
+    .expertise-title,
+    .experience-title,
+    .projects-title,
+    .achievements-title,
+    .contact-title{
+        font-size:3rem;
+        white-space:normal;
+        text-align:center;
+    }
+
+    /* JOURNEY */
+
+    .journey-right{
+        grid-template-columns:1fr;
+    }
+
+    /* EXPERTISE */
+
+    .expertise-grid{
+        grid-template-columns:1fr;
+    }
+
+    .expertise-card{
+        width:100%;
+        min-height:auto;
+    }
+
+    /* EXPERIENCE */
+
+    .internship-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* PROJECTS */
+
+    .projects-row{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .project-card{
+        width:100%;
+        max-width:400px;
+    }
+
+    /* ACHIEVEMENTS */
+
+    .achievement-card{
+        grid-template-columns:1fr;
+    }
+
+    .achievement-image img{
+        height:auto;
+    }
+
+    /* CONTACT */
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form-box{
+        padding:25px;
+    }
+
+    /* FOOTER */
+
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+    .hero-left img{
+        width:260px;
+    }
+
+    .hero-right h1{
+        font-size:2.2rem;
+    }
+
+    .journey-title,
+    .education-title,
+    .expertise-title,
+    .experience-title,
+    .projects-title,
+    .achievements-title,
+    .contact-title{
+        font-size:2.4rem;
+    }
+
+    .stat-card{
+        padding:25px;
+    }
+
+    .timeline-item{
+        padding-left:50px;
+    }
+
+    .timeline-card{
+        padding:20px;
     }
 }
